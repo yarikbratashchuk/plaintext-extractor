@@ -1,6 +1,6 @@
 # Plain Text Extractor
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Go Report Card](https://goreportcard.com/badge/github.com/huantt/plaintext-extractor)](https://goreportcard.com/report/github.com/huantt/plaintext-extractor)
+[![Go Report Card](https://goreportcard.com/badge/github.com/yarikbratashchuk/plaintext-extractor)](https://goreportcard.com/report/github.com/yarikbratashchuk/plaintext-extractor)
 
 Plain Text Extractor is a Golang library that helps you extract plain text from `HTML` and `Markdown`. 
 
@@ -32,7 +32,7 @@ fmt.Println(output)
 ```shell
 goos: windows
 goarch: amd64
-pkg: github.com/huantt/plaintext-extractor/markdown
+pkg: github.com/yarikbratashchuk/plaintext-extractor/markdown
 cpu: 11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz
 BenchmarkMarkdownExtractorMediumSize
 BenchmarkMarkdownExtractorMediumSize-8   	12194006	        89.09 ns/op	      16 B/op	       1 allocs/op

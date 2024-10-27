@@ -1,4 +1,4 @@
-module github.com/huantt/plaintext-extractor
+module github.com/yarikbratashchuk/plaintext-extractor
 
 go 1.18
 

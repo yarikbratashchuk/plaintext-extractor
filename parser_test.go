@@ -1,8 +1,8 @@
 package plaintext
 
 import (
-	"github.com/huantt/plaintext-extractor/html"
-	"github.com/huantt/plaintext-extractor/markdown"
+	"github.com/yarikbratashchuk/plaintext-extractor/html"
+	"github.com/yarikbratashchuk/plaintext-extractor/markdown"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
