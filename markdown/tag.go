@@ -43,13 +43,13 @@ var tags = []Tag{
 	{
 		Name:       "Image",
 		FullRegex:  regexp.MustCompile(`\!\[(.*?)\]\((.*?)\)`),
-		StartRegex: regexp.MustCompile(`\!\[`),
-		EndRegex:   regexp.MustCompile(`\]\((.*?)\)`),
+		StartRegex: regexp.MustCompile(`\!\[(.*?)\]\(`),
+		EndRegex:   regexp.MustCompile(`\)`),
 	},
 	{
 		Name:       "Link",
 		FullRegex:  regexp.MustCompile(`\[(.*?)\]\((.*?)\)`),
-		StartRegex: regexp.MustCompile(`\[`),
-		EndRegex:   regexp.MustCompile(`\]\((.*?)\)`),
+		StartRegex: regexp.MustCompile(`\[(.*?)\]\(`),
+		EndRegex:   regexp.MustCompile(`\)`),
 	},
 }
