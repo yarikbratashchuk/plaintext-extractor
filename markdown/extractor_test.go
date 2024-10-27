@@ -21,8 +21,8 @@ func TestExtract(t *testing.T) {
 		{"**bold**", "bold"},
 		{"`code`", "code"},
 		{"`node code", "`node code"},
-		{"[link](https://example.com)", "link"},
-		{"[image](https://image.com/image.png)", "image"},
+		{"[link](https://example.com)", "https://example.com"},
+		{"[image](https://image.com/image.png)", "https://image.com/image.png"},
 	}
 
 	markdownExtractor := NewExtractor()
