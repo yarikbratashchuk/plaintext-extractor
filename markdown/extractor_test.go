@@ -15,7 +15,7 @@ func TestExtract(t *testing.T) {
 		expected string
 	}{
 		{"~~strikethrough~~", "strikethrough"},
-		{"# H1 \n*italic* **bold** `code` `not code [link](https://example.com) ![image](https://image.com/image.png) ~~strikethrough~~", "H1 \nitalic bold code `not code link image strikethrough"},
+		{"# H1 \n*italic* **bold** `code` `not code [link](https://example.com) ![image](https://image.com/image.png) ~~strikethrough~~", "H1 \nitalic bold code `not code https://example.com https://image.com/image.png strikethrough"},
 		{"# H1 \n new line", "H1 \n new line"},
 		{"*italic*", "italic"},
 		{"**bold**", "bold"},
