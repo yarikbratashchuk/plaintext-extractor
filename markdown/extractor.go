@@ -38,6 +38,12 @@ func (e *Extractor) PlainText(input string) (*string, error) {
 			if tag.EndRegex != nil {
 				plain = tag.EndRegex.ReplaceAll(plain, nil)
 			}
+
+			// replace all spaces with %20 in plain for image and link tags
+			if tag.Name == "Image" || tag.Name == "Link" {
+				plain = bytes.ReplaceAll(plain, []byte(" "), []byte("%20"))
+			}
+
 			tmp = bytes.Replace(tmp, fullTag, plain, -1)
 		}
 	}
